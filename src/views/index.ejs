@@ -23,7 +23,8 @@
                  <tr>
                     <th>Temperatura</th>
                     <th>Humedad</th>                                
-                    <th>Fecha</th>                      
+                    <th>Fecha y hora </th> 
+                    <th>Hora</th>                        
                 </tr>
                </thead>
                <tbody>
@@ -49,13 +50,13 @@
                   {"data":"Temperatura"},
                   {"data":"humeda"},
                   {"data":"fecha"},
+                  {"data":"hora"},
               ],
+              
               "columnDefs":[{
-                  "targets":[2],
-                  render(v){
-                      return Number(v).toFixed(2)
-                  }
-              }]
+                "defaultContent": "-",
+                "targets": "_all"
+            }]
           });
     });
 </script>
